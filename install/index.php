@@ -15,11 +15,6 @@ class Netli_Ip extends CModule {
     public  $PARTNER_URI;
     public  $errors;
 
-
-    /**
-     * Returns array of table names and their corresponding filename prefixes
-     * @return array
-     */
     protected function getDB()
     {
         return array(
