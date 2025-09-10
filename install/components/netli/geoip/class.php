@@ -46,19 +46,10 @@ class GeoIpComponent extends CBitrixComponent
 
             $this->IncludeComponentTemplate();
 
-            if (!empty($this->arResult)) {
-                $this->SetResultCacheKeys(
-                    array()
-                );
-                $this->IncludeComponentTemplate();
-            } else {
-                $this->AbortResultCache();
-                \Bitrix\Iblock\Component\Tools::process404(
-                    "Секция не найдена",
-                    true,
-                    true
-                );
-            }
+            $this->SetResultCacheKeys(
+                array()
+            );
+
         }
     }
 }

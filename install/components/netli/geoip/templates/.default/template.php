@@ -18,13 +18,13 @@
         <div class="geoip-form__group">
             <label class="geoip-form__label" for="ipAddress">IP адрес:</label>
             <input
-                type="text"
-                id="ipAddress"
-                name="ip"
-                class="geoip-form__input"
-                placeholder="Введите IP адрес (например: 8.8.8.8)"
-                value="212.118.42.58"
-                required
+                    type="text"
+                    id="ipAddress"
+                    name="ip"
+                    class="geoip-form__input"
+                    placeholder="Введите IP адрес (например: 8.8.8.8)"
+                    value="212.118.42.58"
+                    required
             >
         </div>
         <button type="submit" class="geoip-form__button">
@@ -53,11 +53,9 @@
         <div class="geoip-form__result-item">
             <span class="geoip-form__result-label" id="">Координаты:</span>
             <span class="geoip-form__result-value">
-            <span  id="latitude">,
-            <span  id="longitude">
+                <span  id="latitude"></span>,
+                <span  id="longitude"></span>
             </span>
-
-        </span>
         </div>
         <div class="geoip-form__result-item">
             <span class="geoip-form__result-label">Источник:</span>
