@@ -3,6 +3,8 @@
 1 склонировать в /local/modules
 2 установить модуль
 3 Вызвать компонент
+
+```
 <?$APPLICATION->IncludeComponent(
     "netli:geoip",
     "",
@@ -11,3 +13,4 @@
         "CACHE_TYPE" => "A"
     )
 );?>
+```
