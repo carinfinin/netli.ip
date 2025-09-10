@@ -42,26 +42,23 @@ class GeoIpComponent extends CBitrixComponent
     protected function getResult()
     {
 
-//        if ($this->startResultCache(false, [$_REQUEST, $this->arParams])) {
+        if ($this->startResultCache(false, [$_REQUEST, $this->arParams])) {
 
+            $this->IncludeComponentTemplate();
 
-
-        $this->IncludeComponentTemplate();
-
-
-//            if (!empty($this->arResult)) {
-//                $this->SetResultCacheKeys(
-//                    array()
-//                );
-//                $this->IncludeComponentTemplate();
-//            } else {
-//                $this->AbortResultCache();
-//                \Bitrix\Iblock\Component\Tools::process404(
-//                    "Секция не найдена",
-//                    true,
-//                    true
-//                );
-//            }
-//        }
+            if (!empty($this->arResult)) {
+                $this->SetResultCacheKeys(
+                    array()
+                );
+                $this->IncludeComponentTemplate();
+            } else {
+                $this->AbortResultCache();
+                \Bitrix\Iblock\Component\Tools::process404(
+                    "Секция не найдена",
+                    true,
+                    true
+                );
+            }
+        }
     }
 }
