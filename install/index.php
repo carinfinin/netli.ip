@@ -61,7 +61,7 @@ class Netli_Ip extends CModule {
     }
     public function UnInstallFiles()
     {
-        if (is_dir($_SERVER["DOCUMENT_ROOT"] . "/local/components/ibs")) {
+        if (is_dir($_SERVER["DOCUMENT_ROOT"] . "/local/components/netli")) {
             DeleteDirFilesEx(
                 "/local/components/netli"
             );
