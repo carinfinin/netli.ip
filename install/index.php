@@ -63,7 +63,7 @@ class Netli_Ip extends CModule {
     {
         if (is_dir($_SERVER["DOCUMENT_ROOT"] . "/local/components/ibs")) {
             DeleteDirFilesEx(
-                "/local/components/netli.ip"
+                "/local/components/netli"
             );
         }
         return true;
